@@ -114,12 +114,35 @@ textarea {
   font-size: 14px;
 }
 
-textarea::placeholder {
-  color: #83513Eaa;
-}
-#couponMessage {
-  display: block;
-  margin-top: 10px;
+textarea {
+  width: 260px;
+  min-height: 60px;
+  padding: 12px 15px;
+
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  color: #83513E;
+
+  background: #fff9c0;
+  border: 2px dashed #F288A1;
+  border-radius: 14px;
+
+  resize: none;
+  outline: none;
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+textarea::placeholder {
+  color: #b08b6f;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+textarea:focus {
+  transform: scale(1.03);
+  box-shadow: 0 10px 18px rgba(242, 136, 161, 0.35);
+  border-color: #83513E;
 }
