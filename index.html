@@ -16,7 +16,15 @@
 <body>
 
   <h1>🎟️ cuponera !! ٩(^ᗜ^ )و ´-</h1>
+<p id="subtitle">
+  Uso exclusivo de y para <strong>Canelito</strong>.<br>
+  <em>Normas y condiciones bajo la misma regla: te amo mucho.</em>
+</p>
 
+  <!-- CONTADOR -->
+  <p id="counter">Cupones creados: 0 🎟️</p>
+
+  <!-- TEXTO DEL CUPÓN -->
   <input
     type="text"
     id="couponText"
@@ -25,11 +33,23 @@
 
   <br>
 
+  <!-- MENSAJE PERSONAL -->
+  <textarea
+    id="messageText"
+    placeholder="Escribe algo bonito para ella..."
+  ></textarea>
+
+  <br>
+
   <button onclick="createCoupon()">Crear cupón</button>
 
+  <!-- CUPÓN -->
   <div id="couponContainer">
     <div id="coupon">
-      <span id="couponContent"></span>
+      <div>
+        <div id="couponContent"></div>
+        <small id="couponMessage"></small>
+      </div>
     </div>
   </div>
 
