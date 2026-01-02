@@ -1,0 +1,78 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: #F6DBF3;
+  padding: 40px;
+  color: #83513E;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  width: 260px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #FAD6D3;
+  color: #83513E;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #83513Eaa;
+}
+
+button {
+  padding: 12px 18px;
+  margin: 12px;
+  border: none;
+  border-radius: 999px;
+  background: #F288A1;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+#couponContainer {
+  margin-top: 35px;
+}
+
+#coupon {
+  width: 320px;
+  height: 160px;
+  background: linear-gradient(
+    135deg,
+    #E7AE75,
+    #FAD6D3,
+    #F288A1
+  );
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  animation: pop 0.4s ease-out;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
