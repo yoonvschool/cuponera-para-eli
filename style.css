@@ -96,3 +96,30 @@ button:hover {
     opacity: 1;
   }
 }
+#counter {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+textarea {
+  margin-top: 15px;
+  width: 280px;
+  height: 90px;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  resize: none;
+  font-family: 'Poppins', sans-serif;
+  background: #FAD6D3;
+  color: #83513E;
+  font-size: 14px;
+}
+
+textarea::placeholder {
+  color: #83513Eaa;
+}
+#couponMessage {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
