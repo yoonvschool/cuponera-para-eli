@@ -3,13 +3,10 @@ body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   background-color: #F6DBF3;
-
-  /* IMAGEN DE FONDO (opcional, si no tienes fondo.png se ve solo el color) */
   background-image: url("fondo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   padding: 40px;
   color: #83513E;
 }
@@ -17,7 +14,20 @@ body {
 /* ===== TÍTULO ===== */
 h1 {
   font-size: 2.3rem;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+/* ===== SUBTEXTO ===== */
+.subtitle {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* ===== CONTADOR ===== */
+#counter {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 /* ===== INPUT ===== */
@@ -30,10 +40,40 @@ input {
   background: #FAD6D3;
   color: #83513E;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 input::placeholder {
   color: #83513Eaa;
+}
+
+/* ===== TEXTAREA BONITO ===== */
+textarea {
+  width: 260px;
+  min-height: 70px;
+  padding: 12px 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #83513E;
+  background: #FFF9C0;
+  border: 2px dashed #F288A1;
+  border-radius: 14px;
+  resize: none;
+  outline: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+textarea::placeholder {
+  color: #b08b6f;
+  font-style: italic;
+}
+
+textarea:focus {
+  transform: scale(1.03);
+  box-shadow: 0 10px 18px rgba(242, 136, 161, 0.35);
+  border-color: #83513E;
 }
 
 /* ===== BOTONES ===== */
@@ -67,21 +107,17 @@ button:hover {
   height: 170px;
   background: #FFF9C0;
   border-radius: 18px;
-
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-
   font-size: 20px;
   font-weight: 600;
   text-align: center;
   color: #83513E;
-
   padding: 22px;
   box-shadow: 0 12px 25px rgba(0,0,0,0.25);
-
   border: 3px dashed #F288A1;
-
   animation: pop 0.4s ease-out;
 }
 
@@ -92,43 +128,7 @@ button:hover {
     opacity: 0;
   }
   100% {
-    transform: scaletextarea {
-  width: 260px;
-  min-height: 60px;
-  padding: 12px 15px;
-
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  color: #83513E;
-
-  background: #fff9c0;
-  border: 2px dashed #F288A1;
-  border-radius: 14px;
-
-  resize: none;
-  outline: none;
-
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-
-  transition: all 0.3s ease;
-}
-
-textarea::placeholder {
-  color: #b08b6f;
-  opacity: 0.8;
-  font-style: italic;
-}
-
-textarea:focus {
-  transform: scale(1.03);
-  box-shadow: 0 10px 18px rgba(242, 136, 161, 0.35);
-  border-color: #83513E;
-}
-(1);
+    transform: scale(1);
     opacity: 1;
   }
-}
-#counter {
-  font-size: 16px;
-  margin-bottom: 20px;
 }
