@@ -92,29 +92,7 @@ button:hover {
     opacity: 0;
   }
   100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-#counter {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-textarea {
-  margin-top: 15px;
-  width: 280px;
-  height: 90px;
-  padding: 12px;
-  border-radius: 14px;
-  border: none;
-  resize: none;
-  font-family: 'Poppins', sans-serif;
-  background: #FAD6D3;
-  color: #83513E;
-  font-size: 14px;
-}
-
-textarea {
+    transform: scaletextarea {
   width: 260px;
   min-height: 60px;
   padding: 12px 15px;
@@ -145,4 +123,12 @@ textarea:focus {
   transform: scale(1.03);
   box-shadow: 0 10px 18px rgba(242, 136, 161, 0.35);
   border-color: #83513E;
+}
+(1);
+    opacity: 1;
+  }
+}
+#counter {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
